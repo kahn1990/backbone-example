@@ -1,0 +1,69 @@
+@import "../common/definition.less";
+.header-box {
+    height: @height-header-box;
+    color: #fff;
+    .header-logn {
+        float: left;
+        margin-top: 25px;
+        .header-logn-img {
+            float: left;
+            height: 32px;
+        }
+    }
+    .header-text-left {
+        float: left;
+        margin-top: 40px;
+        margin-left: 30px;
+        p {
+            .line-height-size (14px);
+        }
+    }
+    .header-text-right {
+        float: right;
+        margin-top: 30px;
+        .header-p-text {
+            float: left;
+            height: 40px;
+            line-height: 40px;
+            width: 88px;
+            text-align: center;
+            b.header-p-text-a {
+                font-weight: normal;
+            }
+            .header-p-text-a {
+                color: #fff;
+                .line-height-size (14px);
+            }
+        }
+        .header-p-text-active {
+            border: 1px solid #fff;
+        }
+        .header-p-text-a {
+            cursor: pointer;
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    .header-box {
+        height: 40px;
+        .header-logn {
+            margin-top: 15px;
+            .header-logn-img {}
+        }
+        .header-text-left {
+            margin-top: 30px;
+            margin-left: 10px;
+        }
+        .header-text-right {
+            width: 100%;
+            margin-top: 10px;
+            .header-p-text {
+                width: 33%;
+            }
+            .header-p-text-active {
+                border: none;
+                border-bottom: 1px solid #fff;
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+<div class="container content">
+	<script>
+		document.addEventListener('page:fetch', function() {
+			$.fn.fullpage.setAllowScrolling(false);
+		});
+	</script>
+	<style>
+		html {
+			height: 100%;
+		}
+		body {
+			height: 100%;
+			background-color: #1677c8;
+			background-image: -webkit-linear-gradient(120deg, #1677c8, #2ac2d8);
+			background-image: -moz-linear-gradient(120deg, #1677c8, #2ac2d8);
+			background-image: -ms-linear-gradient(120deg, #1677c8, #2ac2d8);
+			background-image: -o-linear-gradient(120deg, #1677c8, #2ac2d8);
+			background-image: linear-gradient(120deg, #1677c8, #2ac2d8);
+		}
+		#footer {
+			position: absolute;
+			bottom: 12px;
+			left: 0;
+			width: 100%;
+		}
+		@media screen and (max-width: 600px) {
+			#footer {
+				position: relative;
+				bottom: 12px;
+				left: 0;
+				width: 100%;
+			}
+		}
+	</style>
+	<div class="content-title">
+		<p class=" content-title-p">我的信息被泄漏了么？</p>
+	</div>
+	<div class="content-search">
+		<form action="" name="form" id="formSearchInfo" novalidate style="height:100%;">
+			<input class="content-search-input" name="searchInfo" type="text" placeholder="输入您关心的信息（QQ/用户名/邮箱/手机/身份证号/卡号 等）" required="required" ng-minlength="6">
+			<a class="content-search-a" id="SearchInfoClickA">GO&nbsp;&gt;</a>
+		</form>
+	</div>
+</div>
+<div class="container content-bottom">
+	<p class="content-bottom-p">已经有<i id="setPvNum">45354</i>位用户通过我们的监控保护自己的信息安全</p>
+	<script type="text/javascript">
+		var callBackPvNumClass = $('#callBackPvNum').attr("class");
+		$('#setPvNum').text(callBackPvNumClass);
+	</script>
+</div>

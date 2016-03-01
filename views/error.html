@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="HandheldFriendly" content="true">
+		<meta name="apple-mobile-web-app-capable" content="YES">
+		<title>无贼 - 身边的互联网信息保护专家</title>
+		<link rel="stylesheet" type="text/css" href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/home.css" type="text/css">
+		<script type="text/javascript" src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script type="text/javascript" src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/js/templates.js"></script>
+		<script type="text/javascript" src="/js/bundle.js"></script>
+		<script type="text/javascript" src="/js/isweb.js"></script>
+	</head>
+
+	<body style="background:#27CDAC">
+		<header id="header" class="header-box">
+			<div class="container">
+				<div class="header-logn">
+					<img class="header-logn-img" src="img/logn.png" alt="">
+				</div>
+				<div class="header-text-left">
+					<p>身边的互联网信息保护专家</p>
+				</div>
+				<div class="header-text-right">
+					<p class="header-p-text">
+						<a class="header-p-text-a" href="/" id="btnHome">首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</a>
+					</p>
+					<p class="header-p-text ">
+						<a class="header-p-text-a" href="/wuzei" id="btnWuzei">认识无贼</a>
+					</p>
+					<p class="header-p-text header-p-text-active">
+						<a class="header-p-text-a" href="/more" id="btnMore">了解更多</a>
+					</p>
+				</div>
+			</div>
+		</header>
+		<div class="container more-content">
+			<h3 style="color:#fff;font-size:160px;text-align:center">404</h3>
+		</div>
+		<script>
+			 //$('.header-text-right').children('p').removeClass('header-p-text-active');
+			 //$('#btnMore').parent().addClass('header-p-text-active');
+			 //$(".header-logn-img").removeAttr('src');
+			 //$(".header-logn-img").attr('src','img/logn-blue.png');
+			var nowWindowsHeight = $(window).height();
+			if (nowWindowsHeight > 840) {
+				$("body").css({
+					'height': nowWindowsHeight
+				})
+			}
+		</script>
+		<footer id="footer" class="container">
+			<%- include footer.html %>
+		</footer>
+		<input type="hidden" value="<%=message %>" />
+		<input type="hidden" value="<%=error.status %>" />
+		<input type="hidden" value="<%=error.stack %>" />
+		<script type="text/javascript">
+			var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+			document.write(unescape("%3Cspan  style='display:none;' id='cnzz_stat_icon_1254050368'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1254050368' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+	</body>
+
+</html>

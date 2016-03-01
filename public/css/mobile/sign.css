@@ -1,0 +1,54 @@
+.screenDown {
+  position: absolute;
+  bottom: 14px;
+  height: 14px;
+  width: 100%;
+  margin-top: 20px;
+}
+.screenDown .screenDownBotton {
+  width: 23px;
+  margin: 0 auto;
+  display: block;
+}
+.screenDown .screenDownBotton span {
+  height: 13px;
+  width: 23px;
+  display: block;
+  margin: 0 auto;
+  font-size: 31px;
+}
+.screenDown .screenDownBotton #sign1_1,
+.screenDown .screenDownBotton #sign1_2 {
+  position: absolute;
+}
+.screenDown .screenDownBotton #sign1_1 {
+  bottom: 20px;
+  background: url(../css/i/arrow1.png) no-repeat;
+  opacity: .75;
+}
+.screenDown .screenDownBotton #sign1_2 {
+  bottom: 10px;
+  background: url(../css/i/arrow2.png) no-repeat;
+}
+.screenUp .screenUpBotton {
+  width: 23px;
+  margin: 0 auto;
+  display: block;
+}
+.screenUp .screenUpBotton span {
+  position: absolute;
+  height: 13px;
+  width: 23px;
+  display: block;
+  margin: 0 auto;
+  font-size: 31px;
+}
+.screenUp .screenUpBotton #sign2_1 {
+  bottom: 20px;
+  background: url(../css/i/arrow3.png) no-repeat;
+}
+.screenUp .screenUpBotton #sign2_2 {
+  bottom: 10px;
+  background: url(../css/i/arrow4.png) no-repeat;
+  opacity: .75;
+}

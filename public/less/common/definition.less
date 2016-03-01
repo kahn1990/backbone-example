@@ -1,0 +1,33 @@
+@font-color: #fff;
+@height-header-box:80px;
+@height-content-title-margin-top:50px;
+@height-content-title-p-size:36px;
+@height-content-search:48px;
+@height-content-search-margin-top:50px;
+@height-content:(@height-content-title-margin-top+@height-content-title-p-size+@height-content-search+@height-content-search-margin-top);
+@height-content-box-margin-top:50px;
+@height-content-box-info-screen:180px;
+@height-content-bottom:50px;
+@content-box-info-screen-box-weixin-position-absolute-top:(@height-header-box+@height-content+@height-content-box-margin-top+40px);
+@content-box-info-screen-box-weixin-position-absolute-right:107px;
+@footer-margin-top:70px;
+
+.border-radius (@radius) {
+	    -webkit-border-radius: @radius;
+	    -moz-border-radius: @radius;
+	    -ms-border-radius: @radius;
+	    -o-border-radius: @radius;
+	    border-radius: @radius;
+}
+.box-shadow (@radius) {
+   	 -webkit-box-shadow: @radius;
+	-moz-box-shadow: @radius;
+	-ms-box-shadow: @radius;
+	-o-box-shadow: @radius;
+	box-shadow: @radius;
+}
+.line-height-size (@num) {
+	font-size: @num;
+	height:@num;
+	line-height: @num;
+}

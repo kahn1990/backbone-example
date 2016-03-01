@@ -1,0 +1,68 @@
+/* css3响应式 */
+@media (min-width: 750px) and (max-width: 1200px) {
+    // 首页第一屏
+    .sectionOne {
+        #headerOne {
+            & {
+                height: 130px;
+            }
+            .headerImg {
+                img {
+                    width: 120px;
+                }
+            }
+        }
+        // content-box
+        .content-box {
+            .content-box-title {
+                height: 40px;
+                line-height: 40px;
+            }
+            .content-box-ul {
+                li {
+                    font-size: 14px;
+                    font-size: 1.4rem;
+                    line-height: 26px;
+                }
+            }
+        }
+    }
+    // 首页第二屏
+    .sectionTwo {
+        .content-box.desc {
+            p {
+                font-size: 14px;
+                line-height: 24px;
+            }
+        }
+        // 二维码区域
+        .content-footer {
+            .content-footer-left {
+                & {
+                    width: 120px;
+                }
+                img {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+            .content-footer-right {
+                & {
+                    padding-left: 40px;
+                    height: 80px;
+                }
+                .p1 {
+                    font-size: 16px;
+                    color: #adadad;
+                    line-height: 22px;
+                }
+                .p2,
+                .p3 {
+                    font-size: 14px;
+                    color: #adadad;
+                    line-height: 18px;
+                }
+            }
+        }
+    }
+}

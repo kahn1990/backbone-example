@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="HandheldFriendly" content="true">
+		<meta name="apple-mobile-web-app-capable" content="YES">
+		<title>无贼-身边的互联网信息保护专家</title>
+		<meta name="keywords" content="无贼网,无贼云安,信息泄露,个人信息泄露,信息泄露查询, 密码泄露查询, 隐私泄露查询, qq信息泄露查询, qq泄露查询,账号泄露查询,邮箱泄露查询, 身份证泄露查询,身份泄露查询,手机号泄露查询,账号保护,隐私保护" />
+		<meta name="description" content="无贼是全国首家个人网络账号及隐私保护产品。提供账号安全实时风险分析与评估、账号隐私泄露查询、账号隐私泄露预警、账号安全保护、个人隐私保护等服务，以及提供防骗知识库，安全专家在线解答、重大安全事件推送等特色功能，为您的账号隐私安全保驾护航!" />
+		<link rel="stylesheet" href="css/mobile.css" type="text/css">
+		<link rel="stylesheet" href="font/iconfont.css" type="text/css">
+		<link rel="stylesheet" type="text/css" href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css">
+		<script type="text/javascript" src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script type="text/javascript" src="lib/jquery/jquery.fullPage.min.js"></script>
+		<script>
+			function isEmpty() {
+				var _form = document.form;
+				//  alert(_form.searchInfo.value);
+				if (_form.searchInfo.value == "") {
+
+					return false;
+				}
+				return true;
+			}
+		</script>
+		<style>
+			@media screen and (max-height: 490px) {
+				.sectionTwo .content-box.desc p {
+					margin-bottom: 0;
+				}
+				.sectionOne .content-box .content-box-ul li {
+					line-height: 22px;
+					margin: 0 5px;
+				}
+			}
+		</style>
+		<script type="text/javascript">
+		    (function() {
+		        _fmOpt = {
+		            partner: 'notheft',
+		            appName: 'notheft_web',
+		            token: '<%=tokenIdStr %>' };
+		        var cimg = new Image(1,1);
+		        cimg.onload = function() {
+		            _fmOpt.imgLoaded = true;
+		        };
+		        cimg.src = "https://fp.fraudmetrix.cn/fp/clear.png?partnerCode=notheft&appName=notheft_web&tokenId=" + _fmOpt.token;
+		        var fm = document.createElement('script'); fm.type = 'text/javascript'; fm.async = true;
+		        fm.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'static.fraudmetrix.cn/fm.js?ver=0.1&t=' + (new Date().getTime()/3600000).toFixed(0);
+		        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fm, s);
+		    })();
+		</script>
+	</head>
+
+	<body>
+		<div id="fullpage">
+			<section class="sectionOne section">
+				<div id="headerOne">
+					<div class="headerImg">
+						<img src="img/logo.png">
+					</div>
+				</div>
+				<div class="content-search">
+					<form action="/toAppSearch" name="form" method="post" id="formSearchInfo" novalidate="" style="height:100%;">
+						<input class="content-search-input" name="searchInfo" type="text" placeholder="输入您关心的信息（用户名/邮箱/手机/身份证号/卡号 等）" required="required" ng-minlength="6">
+						<input type="hidden" name="judgeDevice" value="1">
+						<button class="content-search-a" onclick="return isEmpty()" id="SearchInfoClickA"><i class="iconfont icon-search"></i>
+						</button>
+					</form>
+					<p class="content-search-p"><i id="setPvNum"><%=backPvNum %></i>位用户通过我们的监控保护自己的信息安全</p>
+				</div>
+				<div class="content-box">
+					<div class="content-box-title">
+						<p class="content-box-title-left"><i class="iconfont icon-message"></i>最新泄露</p>
+						<!-- <p class="content-box-title-right"><i class="iconfont icon-reload"></i>刷新</p> -->
+					</div>
+					<ul class="content-box-ul">
+						<li>某中型电商网站泄露用户名密码600多万</li>
+						<li>某娱乐网站大量用户名密码泄露</li>
+						<li>某小游戏网站大量用户名密码泄露</li>
+						<li>国内著名程序员社区大规模账号密码泄露</li>
+						<li>国内知名it网站泄露用户名密码和邮箱</li>
+						<li>国内常用邮箱大量用户名密码泄露</li>
+					</ul>
+				</div>
+				<div class="screenDown">
+					<a class="screenDownBotton" href="#page2">
+						<span id="sign1_1" class="iconfont"></span>
+						<span id="sign1_2" class="iconfont"></span>
+					</a>
+				</div>
+			</section>
+			<section class="sectionTwo section">
+				<div id="headerTwo">
+					<div class="header-wrap">
+						<img src="img/logn2.png" width="60px" height="60px">
+						<p class="headerP">关于无贼</p>
+					</div>
+				</div>
+				<div class="content-box desc">
+					<p>无贼，全国首家个人网络账号及隐私保护产品。提供账号安全实时风险分析与评估、账号隐私泄露查询、账号隐私泄露预警、账号安全保护、个人隐私保护等服务，以及提供防骗知识库，安全专家在线解答、重大安全事件推送等特色功能。</p>
+					<p>从创立之初，无贼便以保护亿万网民的网络账号，个人网络敏感信息为己任。并希望通过我们的努力，让网络信息安全保护不再是难事。当前，无贼已与国内众多网站，安全公司建立了数据共享及其他方面的合作关系，并与国外一家个人信息保护公司达成了技术共享机制。</p>
+					<p>未来的无贼，会推出更多个人网络账号及隐私信息的安全保护功能。我们相信开放的互联网带来的安全隐患需要无贼这样的产品，我们相信亿万网民的账号和隐私需要无贼的保护，我们相信一群充满梦想的人，可以凭借着执着的力量，让你的网络账号，个人隐私更安全。</p>
+				</div>
+				<!-- <div class="content-footer">
+					<div class="content-footer-left">
+						<img src="img/weixin.png" width="66px" height="66px">
+					</div>
+					<div class="content-footer-right">
+						<p class="p1">无贼</p>
+						<p class="p2">微信号：notheft（点击复制账号）</p>
+						<p class="p3">关注无贼公共账号，获得更多保护！</p>
+					</div>
+				</div> -->
+				<div class="screenUp">
+					<a class="screenUpBotton" href="#page1">
+						<span id="sign2_1" class="iconfont"></span>
+						<span id="sign2_2" class="iconfont"></span>
+					</a>
+				</div>
+			</section>
+		</div>
+		<script type="text/javascript">
+			function fullpageAuto() {
+				$('#fullpage').fullpage({
+					anchors: ['page1', 'page2'],
+					//navigation: true
+				});
+			}
+			fullpageAuto();
+		</script>
+		<script type="text/javascript">
+			var windowHeight = $(window).height();
+			if (windowHeight < 480) {
+				$('#headerOne').css({
+					'height': '53px'
+				})
+				$('.headerImg').css({
+					'margin-top': '10px'
+				})
+			}
+		</script>
+		<script>
+			function signAnimate() {
+				var cicleFun = function(name1, name2, shift, interval) {
+					$(name1).animate({
+						"bottom": "-=" + shift + "px"
+					}, interval, function() {
+						$(name1).hide();
+						$(name2).animate({
+							"bottom": "-=" + shift + "px"
+						}, interval, function() {
+							$(name2).hide();
+							$(name1).css("bottom", "+=" + shift * 2 + "px").show().animate({
+								"bottom": "-=" + shift + "px"
+							}, interval, function() {
+								$(name2).css("bottom", "+=" + shift * 2 + "px").show().animate({
+									"bottom": "-=" + shift + "px"
+								}, interval, function() {
+									setTimeout(function() {
+										cicleFun(name1, name2, shift, interval)
+									}, 1500);
+								});
+							});
+						});
+					});
+				}
+				cicleFun("#sign1_1", "#sign1_2", 30, 200);
+				cicleFun("#sign2_1", "#sign2_2", -30, 200);
+			}
+			$(function() {
+				signAnimate();
+			});
+		</script>
+		<script type="text/javascript">
+			var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+			document.write(unescape("%3Cspan style='display:none;' id='cnzz_stat_icon_1254050368'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1254050368' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+
+	</body>
+
+</html>

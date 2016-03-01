@@ -1,0 +1,44 @@
+/* css3响应式 */
+@media (min-width: 750px) and (max-width: 1200px) {
+  .sectionOne #headerOne {
+    height: 130px;
+  }
+  .sectionOne #headerOne .headerImg img {
+    width: 120px;
+  }
+  .sectionOne .content-box .content-box-title {
+    height: 40px;
+    line-height: 40px;
+  }
+  .sectionOne .content-box .content-box-ul li {
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 26px;
+  }
+  .sectionTwo .content-box.desc p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .sectionTwo .content-footer .content-footer-left {
+    width: 120px;
+  }
+  .sectionTwo .content-footer .content-footer-left img {
+    width: 100px;
+    height: 100px;
+  }
+  .sectionTwo .content-footer .content-footer-right {
+    padding-left: 40px;
+    height: 80px;
+  }
+  .sectionTwo .content-footer .content-footer-right .p1 {
+    font-size: 16px;
+    color: #adadad;
+    line-height: 22px;
+  }
+  .sectionTwo .content-footer .content-footer-right .p2,
+  .sectionTwo .content-footer .content-footer-right .p3 {
+    font-size: 14px;
+    color: #adadad;
+    line-height: 18px;
+  }
+}

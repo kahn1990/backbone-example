@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="HandheldFriendly" content="true">
+		<meta name="apple-mobile-web-app-capable" content="YES">
+		<title>无贼-身边的互联网信息保护专家</title>
+		<meta name="keywords" content="无贼网,无贼云安,信息泄露,个人信息泄露,信息泄露查询, 密码泄露查询, 隐私泄露查询, qq信息泄露查询, qq泄露查询,账号泄露查询,邮箱泄露查询, 身份证泄露查询,身份泄露查询,手机号泄露查询,账号保护,隐私保护" />
+		<meta name="description" content="无贼是全国首家个人网络账号及隐私保护产品。提供账号安全实时风险分析与评估、账号隐私泄露查询、账号隐私泄露预警、账号安全保护、个人隐私保护等服务，以及提供防骗知识库，安全专家在线解答、重大安全事件推送等特色功能，为您的账号隐私安全保驾护航!" />
+		<link rel="stylesheet" type="text/css" href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/mobile.css" type="text/css">
+		<link rel="stylesheet" href="font/iconfont.css" type="text/css">
+		<script type="text/javascript" src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script type="text/javascript" src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+		<!-- [if lte IE 10]>
+	<style type="text/css">
+	.log ul li{display:block}
+	</style>
+	<![endif]-->
+		<script>
+			function isEmpty() {
+				var _form = document.form;
+				//alert(_form.searchInfo.value);
+				if (_form.searchInfo.value == "") {
+
+					return false;
+				}
+				return true;
+			}
+		</script>
+		<script type="text/javascript">
+		    (function() {
+		        _fmOpt = {
+		            partner: 'notheft',
+		            appName: 'notheft_web',
+		            token: '<%=tokenIdStr %>' };
+		        var cimg = new Image(1,1);
+		        cimg.onload = function() {
+		            _fmOpt.imgLoaded = true;
+		        };
+		        cimg.src = "https://fp.fraudmetrix.cn/fp/clear.png?partnerCode=notheft&appName=notheft_web&tokenId=" + _fmOpt.token;
+		        var fm = document.createElement('script'); fm.type = 'text/javascript'; fm.async = true;
+		        fm.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'static.fraudmetrix.cn/fm.js?ver=0.1&t=' + (new Date().getTime()/3600000).toFixed(0);
+		        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fm, s);
+		    })();
+		</script>
+	</head>
+
+	<body>
+
+		<header id="search-header">
+
+			<a class="search-header-a" href="/backWebApp"></a>
+
+			<div class="content-search">
+
+				<form action="/toAppSearch" name="form" method="post" id="formSearchInfo" novalidate="" style="height:100%;margin: 0px;">
+
+					<input class="content-search-input" name="searchInfo" type="text" placeholder="输入您关心的信息（用户名/邮箱/手机/身份证号/卡号 等）" required="required" ng-minlength="6">
+					<input type="hidden" name="judgeDevice" value="1">
+					<button class="content-search-a" onclick="return isEmpty()" id="SearchInfoClickA"><i class="iconfont icon-search"></i>
+					</button>
+
+				</form>
+
+			</div>
+
+		</header>
+
+		<div class="content-search-box">
+			<div class="content-search-wraper">
+
+				<div class="time-sign"><i class="iconfont icon-dctime"></i>
+				</div>
+				<span class="line" style="display: block;"> </span>
+				<div class="log" style="opacity: 1;">
+					<ul class="result-list">
+						<% JsonList.forEach( function(JsonList){%>
+							<li>
+
+								<h3 class="time"><%=JsonList.leakTime %> </h3>
+
+								<div class="content">
+									<h4><%=JsonList.des %> </h4>
+
+									<p>本次泄露共有
+										<%=JsonList.counts %>条数据 </p>
+								</div>
+							</li>
+							<% });%>
+					</ul>
+					<div class="qrcode">
+						<figure class="qrcode-img">
+							<img src="img/weixin.png" width="100%" height="" style="margin:0 auto;">
+						</figure>
+						<div class="qrcode-text">
+							<p class="p1">无贼</p>
+							<p class="p2">微信号</p>
+							<p class="p3">关注无贼公共账号，获得更多保护！</p>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+
+		<script type="text/javascript">
+			$(function() {
+				function resetLay() {
+					var windowH = $(window).height();
+					var contentSearchBoxH = $('.content-search-box').height();
+					var sHeaderH = $("#search-header").height();
+					if (windowH > (contentSearchBoxH + sHeaderH)) {
+						//$('body').css({'height':windowHeight,'background':'#e0e0e0'})
+						$(".content-search-box").css("height", (windowH - sHeaderH - 20) + "px");
+					}
+				}
+				resetLay();
+				$(window).resize(function() {
+					resetLay();
+				})
+			});
+		</script>
+		<script type="text/javascript">
+			var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+			document.write(unescape("%3Cspan style='display:none;' id='cnzz_stat_icon_1254050368'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1254050368' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+
+	</body>
+
+</html>

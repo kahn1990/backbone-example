@@ -1,0 +1,26 @@
+@import "../common/definition.less";
+footer {
+    margin-top: @footer-margin-top;
+    position: relative;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+}
+@media screen and (max-width: 400px) {
+    #footer {
+        display: none;
+    }
+}
+.footer-p {
+	& {
+		font-family: "宋体";
+		.line-height-size (14px);
+		text-align: center;
+		color: #ccc;
+		margin-bottom: 10px;
+	}
+	a {
+		color:#ccc;
+	}
+}
+

@@ -1,0 +1,71 @@
+.header-box {
+  height: 80px;
+  color: #fff;
+}
+.header-box .header-logn {
+  float: left;
+  margin-top: 25px;
+}
+.header-box .header-logn .header-logn-img {
+  float: left;
+  height: 32px;
+}
+.header-box .header-text-left {
+  float: left;
+  margin-top: 40px;
+  margin-left: 30px;
+}
+.header-box .header-text-left p {
+  font-size: 14px;
+  height: 14px;
+  line-height: 14px;
+}
+.header-box .header-text-right {
+  float: right;
+  margin-top: 30px;
+}
+.header-box .header-text-right .header-p-text {
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  width: 88px;
+  text-align: center;
+}
+.header-box .header-text-right .header-p-text b.header-p-text-a {
+  font-weight: normal;
+}
+.header-box .header-text-right .header-p-text .header-p-text-a {
+  color: #fff;
+  font-size: 14px;
+  height: 14px;
+  line-height: 14px;
+}
+.header-box .header-text-right .header-p-text-active {
+  border: 1px solid #fff;
+}
+.header-box .header-text-right .header-p-text-a {
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  .header-box {
+    height: 40px;
+  }
+  .header-box .header-logn {
+    margin-top: 15px;
+  }
+  .header-box .header-text-left {
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+  .header-box .header-text-right {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .header-box .header-text-right .header-p-text {
+    width: 33%;
+  }
+  .header-box .header-text-right .header-p-text-active {
+    border: none;
+    border-bottom: 1px solid #fff;
+  }
+}

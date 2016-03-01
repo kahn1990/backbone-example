@@ -1,0 +1,35 @@
+{
+
+	"searchStr":{
+		"searchServer":{
+			"hostname":"192.168.47.63",
+			"port":8080,
+			"path":"/leakQuery.json",
+			"method": "post"
+		}
+	},
+	"addPvNum":{
+		"searchServer":{
+			"hostname":"*****",
+			"port":80,
+			"path":"/openapi/json/IncreaseQueryNum.json",
+			"method": "post"
+		}
+	},
+	"addPvBackNum":{
+		"searchServer":{
+			"hostname":"*****",
+			"port":80,
+			"path":"/openapi/json/QueryUserNum.json",
+			"method": "post"
+		}
+	},
+	"forsetiApi":{
+		"searchServer":{
+			"hostname":"******",
+			"port":443,
+			"path":"/riskService",
+			"method": "post"
+		}
+	}
+}
